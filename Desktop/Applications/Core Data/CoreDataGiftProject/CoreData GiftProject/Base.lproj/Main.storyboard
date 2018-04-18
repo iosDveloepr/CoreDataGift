@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4vW-nr-McF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gifts Table View Controller-->
+        <scene sceneID="uDa-WK-00a">
+            <objects>
+                <tableViewController id="H2t-P2-YUF" customClass="GiftsTableViewController" customModule="CoreData_GiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="141" sectionHeaderHeight="28" sectionFooterHeight="28" id="XKL-13-xBb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="200" id="XUd-h6-BFj" customClass="GiftsTableViewCell" customModule="CoreData_GiftProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XUd-h6-BFj" id="vyH-OI-qzi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QnR-5R-iHW">
+                                            <rect key="frame" x="8" y="8" width="359" height="183.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fll-bM-rZH">
+                                            <rect key="frame" x="28" y="30" width="319" height="27.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0Y-eI-WzR">
+                                            <rect key="frame" x="28" y="143" width="319" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qh-YY-tgR">
+                                            <rect key="frame" x="37.5" y="99" width="300" height="2"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="fgY-t2-eiI"/>
+                                                <constraint firstAttribute="width" constant="300" id="hWn-fo-UxH"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="c0Y-eI-WzR" secondAttribute="bottom" constant="24" id="7WF-Xu-Nyv"/>
+                                        <constraint firstItem="7qh-YY-tgR" firstAttribute="centerX" secondItem="QnR-5R-iHW" secondAttribute="centerX" id="CRY-tr-D7L"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="c0Y-eI-WzR" secondAttribute="trailing" constant="20" id="R5n-yN-rJN"/>
+                                        <constraint firstItem="fll-bM-rZH" firstAttribute="leading" secondItem="vyH-OI-qzi" secondAttribute="leadingMargin" constant="20" id="RO3-mS-wl7"/>
+                                        <constraint firstItem="QnR-5R-iHW" firstAttribute="top" secondItem="vyH-OI-qzi" secondAttribute="topMargin" id="S81-uv-6zn"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fll-bM-rZH" secondAttribute="trailing" constant="20" id="T1S-Z0-D5R"/>
+                                        <constraint firstItem="c0Y-eI-WzR" firstAttribute="leading" secondItem="vyH-OI-qzi" secondAttribute="leadingMargin" constant="20" id="f2L-ks-Wy3"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="QnR-5R-iHW" secondAttribute="trailing" id="hIg-yo-cZI"/>
+                                        <constraint firstItem="QnR-5R-iHW" firstAttribute="leading" secondItem="vyH-OI-qzi" secondAttribute="leadingMargin" id="tbz-Pv-m2C"/>
+                                        <constraint firstItem="fll-bM-rZH" firstAttribute="top" secondItem="vyH-OI-qzi" secondAttribute="topMargin" constant="22" id="urR-vu-9ML"/>
+                                        <constraint firstItem="7qh-YY-tgR" firstAttribute="centerY" secondItem="QnR-5R-iHW" secondAttribute="centerY" id="vib-mq-zFG"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="QnR-5R-iHW" secondAttribute="bottom" id="vtq-2y-1SW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myGift" destination="c0Y-eI-WzR" id="67f-eA-wDV"/>
+                                    <outlet property="myImage" destination="QnR-5R-iHW" id="52e-ds-1h2"/>
+                                    <outlet property="myName" destination="fll-bM-rZH" id="3f6-Cz-XWa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="H2t-P2-YUF" id="8aL-sd-kF3"/>
+                            <outlet property="delegate" destination="H2t-P2-YUF" id="wHB-az-Mw4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="aGW-v5-JMv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6ju-RI-llJ">
+                            <connections>
+                                <action selector="addNewGift:" destination="H2t-P2-YUF" id="zdf-jc-Pf6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEK-Wa-Ap1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565.60000000000002" y="164.16791604197903"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PfY-AN-6Lg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4vW-nr-McF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oHo-8u-AiI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H2t-P2-YUF" kind="relationship" relationship="rootViewController" id="CBP-Q4-Nnn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXH-Ar-Whg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337" y="164"/>
+        </scene>
+    </scenes>
+</document>
